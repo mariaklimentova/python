@@ -1,9 +1,9 @@
-from calendar import c
+from re import S
 
 
-a = input('введите число')
-b = (list(a))
-с = 0
-for i in b:
-    num = (int(i))
-
+list = [1, 2, 3, 4, 5]
+s = 0
+for i in list:
+    if i % 2 != 0:
+        s += i
+print(f"сумма не четных чисел = {s}")

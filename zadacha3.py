@@ -1,7 +1,11 @@
-from random import random
-
-
-import random
-a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-random.shuffle(a)
-print(a)
+list = [5, 4, 1.5, 3.8]
+b = 0
+c = 0
+for i in list:
+    if i > b:
+        b = i
+        c = b
+        for s in list:
+            if s > 0 and s < c:
+                c = s
+print(b - c)

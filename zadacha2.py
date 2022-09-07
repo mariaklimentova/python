@@ -1,6 +1,6 @@
-a = int(input('введите число'))
-b = range(1, (a+1))
-c = int(1)
-for i in b:
-    c *= int(i)
-print(c)
+list = [1, 2, 3, 4, 5, 6]
+a = list[0] * list[5]
+b = list[1] * list[4]
+c = list[2] * list[3]
+listTwo = [a, b, c]
+print(listTwo)
