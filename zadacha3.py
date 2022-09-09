@@ -1,11 +1,9 @@
-list = [5, 4, 1.5, 3.8]
-b = 0
-c = 0
-for i in list:
-    if i > b:
-        b = i
-        c = b
-        for s in list:
-            if s > 0 and s < c:
-                c = s
-print(b - c)
+import random
+b = random.randint(0, 100)
+print(b)
+
+k = 2
+result = (f'2*{b}^{k}+4*{b}+5=0')
+with open('file.txt', 'w') as data:
+    data.write(result)
+    data.close

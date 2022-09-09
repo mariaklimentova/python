@@ -1,6 +1,12 @@
-list = [1, 2, 3, 4, 5, 6]
-a = list[0] * list[5]
-b = list[1] * list[4]
-c = list[2] * list[3]
-listTwo = [a, b, c]
-print(listTwo)
+list = [1, 3, 5, 9, 4, 6, 5, 4, 5, 2, 3]
+
+
+def number(list):
+    result = []
+    for i in (list):
+        if i not in result:
+            result.append(i)
+    print(','.join(map(str, result)))
+
+
+number(list)

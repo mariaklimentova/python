@@ -1,9 +1,16 @@
-from re import S
+a = int(input('введите число'))
 
 
-list = [1, 2, 3, 4, 5]
-s = 0
-for i in list:
-    if i % 2 != 0:
-        s += i
-print(f"сумма не четных чисел = {s}")
+def calculation(a):
+    result = []
+    divider = 2
+    while divider <= a:
+        if a % divider == 0:
+            result.append(divider)
+            a = a/divider
+        else:
+            divider += 1
+    print(",".join(map(str, result)))
+
+
+calculation(a)
